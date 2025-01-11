@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (max-width: 1024px) {
+  .lg\\:min-h-0 {
+    min-height: auto;
+  }
+  .lg\\:min-h-screen {
+    min-height: 100vh;
+  }
+}
+
+
+img {
+  user-drag: none;
+  pointer-events: none;
+}
