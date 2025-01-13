@@ -91,7 +91,7 @@ const SwipeButton: React.FC<SwipeButtonProps> = ({
   return (
     <div
       ref={buttonRef}
-      className="relative w-full ml-10 mr-10 h-16 bg-gray-800 rounded-full overflow-hidden cursor-pointer"
+      className="relative w-full ml-10 mr-10 h-16 bg-[#D8E9A8] rounded-full overflow-hidden cursor-pointer"
       onTouchStart={() => setSwiping(true)}
       onTouchMove={(handleTouchMove as unknown) as (e: React.TouchEvent<HTMLDivElement>) => void}
       onTouchEnd={handleTouchEnd}
