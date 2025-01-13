@@ -98,7 +98,7 @@ const SwipeButton: React.FC<SwipeButtonProps> = ({
       onMouseDown={() => setSwiping(true)}
     >
       <div
-        className="absolute inset-0 flex items-center justify-center text-white font-semibold text-2xl z-10"
+        className="absolute inset-0 flex items-center justify-center text-black font-semibold text-2xl z-10"
         style={{ opacity: 1 - swipePercentage / 100 }}
       >
         {text}
@@ -108,9 +108,9 @@ const SwipeButton: React.FC<SwipeButtonProps> = ({
         style={{ width: `${Math.max(swipePercentage, 22)}%` }}
       >
         {arrowDirection === 'right' ? (
-          <ArrowRight className="text-white transition-transform duration-300" size={24} />
+          <ArrowRight className="text-black transition-transform duration-300" size={24} />
         ) : (
-          <ArrowLeft className="text-white transition-transform duration-300" size={24} />
+          <ArrowLeft className="text-black transition-transform duration-300" size={24} />
         )}
       </div>
     </div>
