@@ -104,7 +104,7 @@ const SwipeButton: React.FC<SwipeButtonProps> = ({
         {text}
       </div>
       <div
-        className="absolute left-0 top-0 bottom-0 bg-black rounded-full flex items-center justify-center transition-all duration-300 ease-out"
+        className="absolute left-0 top-0 bottom-0 bg-[#00A340] rounded-full flex items-center justify-center transition-all duration-300 ease-out"
         style={{ width: `${Math.max(swipePercentage, 22)}%` }}
       >
         {arrowDirection === 'right' ? (
