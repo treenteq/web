@@ -121,7 +121,7 @@ export default function Home() {
                             />
                         </a>
                         <a
-                            href="https://discord.com"
+                            href="https://discord.gg/PUUpUcakmC"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
