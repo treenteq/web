@@ -62,7 +62,7 @@ export default function Home() {
                             Partner with us
                         </a>
                         <a
-                            href="/docs"
+                            href="/LitePaper_treenteq.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:underline flex text-[#D8E9A8] items-center gap-1"
@@ -89,7 +89,7 @@ export default function Home() {
                 </div>
                 <div className="flex-1 flex items-center justify-center px-4 lg:px-0 mb-10 lg:mb-20">
                     <Image
-                        src="/right-section-image.svg"
+                        src="/new-right.svg"
                         alt="Centered Image"
                         width={550}
                         height={550}
