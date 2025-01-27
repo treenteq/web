@@ -54,12 +54,20 @@ export default function Home() {
                 <div className="flex justify-end items-center p-4">
                     <nav className="flex gap-4 lg:gap-10 text-white text-sm lg:text-base font-medium mr-4 lg:mr-14">
                         <a
-                            href="https://www.linkedin.com/company/treenteq/"
-                            className="hover:underline"
+                            href="https://app.treenteq.com"
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="hover:underline flex text-[#D8E9A8] items-center gap-1"
                         >
-                            Partner with us
+                            App
+                            <span>
+                                <Image
+                                    src="/new-tab-icon.svg"
+                                    alt="New Tab"
+                                    width={15}
+                                    height={15}
+                                />
+                            </span>
                         </a>
                         <a
                             href="/LitePaper_treenteq.pdf"
@@ -76,6 +84,14 @@ export default function Home() {
                                     height={15}
                                 />
                             </span>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/company/treenteq/"
+                            className="hover:underline"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Partner with us
                         </a>
                         <a
                             href="https://forms.gle/1fbWksFmLCbcToiv8"
