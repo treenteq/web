@@ -32,10 +32,10 @@ export default function Home() {
                 <NavBar />
 
                 {/* main content */}
-                <main className="w-5/6 mx-auto grid lg:grid-cols-2 gap-12 place-items-center sm:mt-20 lg:mt-20">
-                    <div className="space-y-8 ">
+                <main className="max-w-6xl flex flex-col lg:flex-row items-center justify-center gap-8 sm:mt-10 lg:mt-12">
+                    <div className="space-y-8 w-full">
                         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-                            Unlock The Value Of{' '}
+                            Unlock The <br /> Value Of <br />
                             <span className="text-[#00C853]">Your</span> Data
                         </h1>
                         <p className="text-zinc-400 text-xl leading-relaxed max-w-lg">
@@ -67,7 +67,7 @@ export default function Home() {
                             ))}
                         </div>
                     </div>
-                    <div>
+                    <div className="md:flex justify-center items-center hidden w-full">
                         <CardContainer className="inter-var">
                             <CardBody className="bg-black/50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border flex justify-center items-center">
                                 <CardItem

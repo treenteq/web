@@ -22,10 +22,13 @@ export default function NavBar() {
         {
             name: 'Docs',
             path: 'https://www.treenteq.com/LitePaper_treenteq.pdf',
+            external: true,
         },
+        { name: 'Our team', path: '/teams' },
         {
             name: 'Contact Us',
             path: 'https://docs.google.com/forms/d/e/1FAIpQLSfFGfRqMHaBRLy22fDHJvJQgagAP7sjoyVM0HETDOcz79VcVA/viewform',
+            external: true,
         },
     ];
     return (
@@ -37,15 +40,29 @@ export default function NavBar() {
                     <Image src="/logo.svg" alt="logo" width={135} height={45} />
                 </Link>
                 <div className="flex flex-row gap-4">
-                    {navItems.map((nav, index) => (
-                        <Link href={nav.path} key={index}>
-                            <p
-                                className={`font-semibold lg:font-lg ${pathname === nav.path ? 'text-[#00A340] font-extrabold' : 'text-white hover:text-[#00A340]'}`}
+                    {navItems.map((nav, index) =>
+                        nav.external ? (
+                            <a
+                                href={nav.path}
+                                key={index}
+                                target="target_blank"
                             >
-                                {nav.name}
-                            </p>
-                        </Link>
-                    ))}
+                                <p
+                                    className={`font-semibold lg:font-lg ${pathname === nav.path ? 'text-[#00A340] font-extrabold' : 'text-white hover:text-[#00A340]'}`}
+                                >
+                                    {nav.name}
+                                </p>
+                            </a>
+                        ) : (
+                            <Link href={nav.path} key={index}>
+                                <p
+                                    className={`font-semibold lg:font-lg ${pathname === nav.path ? 'text-[#00A340] font-extrabold' : 'text-white hover:text-[#00A340]'}`}
+                                >
+                                    {nav.name}
+                                </p>
+                            </Link>
+                        ),
+                    )}
                 </div>
                 <Link href={'/waitlist'}>
                     <Button className="bg-green-700 hover:bg-black/40">
@@ -61,15 +78,29 @@ export default function NavBar() {
                             <Menu className="text-white" />
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="bg-slate-900/80">
-                            {navItems.map((nav, index) => (
-                                <Link href={nav.path} key={index}>
-                                    <DropdownMenuItem
-                                        className={`font-semibold ${pathname === nav.path ? 'text-[#00A340]' : 'text-white'}`}
+                            {navItems.map((nav, index) =>
+                                nav.external ? (
+                                    <a
+                                        href={nav.path}
+                                        key={index}
+                                        target="target_blank"
                                     >
-                                        {nav.name}
-                                    </DropdownMenuItem>
-                                </Link>
-                            ))}
+                                        <DropdownMenuItem
+                                            className={`font-semibold ${pathname === nav.path ? 'text-[#00A340]' : 'text-white'}`}
+                                        >
+                                            {nav.name}
+                                        </DropdownMenuItem>
+                                    </a>
+                                ) : (
+                                    <Link href={nav.path} key={index}>
+                                        <DropdownMenuItem
+                                            className={`font-semibold ${pathname === nav.path ? 'text-[#00A340]' : 'text-white'}`}
+                                        >
+                                            {nav.name}
+                                        </DropdownMenuItem>
+                                    </Link>
+                                ),
+                            )}
                             <DropdownMenuItem>
                                 <Link href={'/waitlist'}>
                                     <Button className="bg-green-700 hover:bg-black/40">
