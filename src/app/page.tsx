@@ -24,7 +24,9 @@ export default function Home() {
 
     return (
         <div className="min-h-screen overflow-y-auto lg:overflow-hidden relative inset-0 bg-gradient-to-bl from-[#373737] to-black">
-            <Background />
+            <div className="fixed inset-0 w-full h-full">
+                <Background />
+            </div>
 
             <div className="absolute top-0 w-full flex flex-col justify-center items-center">
                 <NavBar />
