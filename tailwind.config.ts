@@ -50,6 +50,9 @@ export default {
                     '4': 'hsl(var(--chart-4))',
                     '5': 'hsl(var(--chart-5))',
                 },
+                screens: {
+                    '3xl': '2560px',
+                },
             },
             borderRadius: {
                 lg: 'var(--radius)',
@@ -58,5 +61,5 @@ export default {
             },
         },
     },
-    plugins: [require('tailwindcss-animate')],
+    plugins: [],
 } satisfies Config;

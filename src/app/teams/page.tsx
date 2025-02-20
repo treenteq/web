@@ -43,7 +43,7 @@ export default function Teams() {
         },
     ];
     return (
-        <div className="min-h-screen overflow-y-auto lg:overflow-hidden relative inset-0 bg-gradient-to-bl from-[#373737] to-black flex flex-col justify-center items-center">
+        <div className="min-h-screen overflow-y-auto relative inset-0 bg-gradient-to-bl from-[#373737] to-black flex flex-col justify-center items-center mb-5">
             <div className="fixed inset-0 w-full h-full pointer-events-none">
                 <Background />
             </div>
