@@ -32,7 +32,7 @@ export default function Home() {
                 <NavBar />
 
                 {/* main content */}
-                <main className="max-w-7xl 2xl:max-w-[85rem] 3xl:max-w-[90rem] mx-auto px-6 sm:px-24 flex flex-col lg:flex-row items-start justify-between gap-10 mt-20 sm:mt-12 lg:mt-10 mb-5 hide-scrollbar">
+                <main className="w-full 2xl:w-[110rem] mx-auto px-6 sm:px-24 flex flex-col lg:flex-row items-start justify-between gap-10 mt-20 sm:mt-12 lg:mt-10 mb-5 hide-scrollbar">
                     {/* Left Section */}
                     <div className="space-y-6 w-full text-center lg:text-left lg:mt-12">
                         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-[5rem] 3xl:text-[4.5rem] font-bold text-white leading-tight">
