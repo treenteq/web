@@ -32,31 +32,45 @@ export default function NavBar() {
         },
     ];
     return (
-        <div className="w-full flex items-center justify-center">
-            {/* desktop header */}
+        <div className="w-full flex flex-col items-center justify-center">
+            {/* Desktop Header */}
             <nav className="lg:flex flex-row justify-between items-center w-5/6 py-5 hidden">
-                {/* logo */}
+                {/* Logo */}
                 <Link href={'/'}>
-                    <Image src="/logo.svg" alt="logo" width={135} height={45} />
+                    <div className="flex justify-center items-center mt-1 lg:mt-3">
+                        <Image
+                            src="/logo.svg"
+                            alt="logo"
+                            width={135}
+                            height={45}
+                        />
+                    </div>
                 </Link>
-                <div className="flex flex-row gap-4">
+
+                {/* Navigation Items */}
+                <div className="flex flex-row gap-6 items-center">
                     {navItems.map((nav, index) =>
                         nav.external ? (
                             <a
                                 href={nav.path}
                                 key={index}
-                                target="target_blank"
+                                target="_blank"
+                                className={`font-semibold lg:font-lg ${
+                                    pathname === nav.path
+                                        ? 'text-[#00A340] font-extrabold'
+                                        : 'text-white hover:text-[#00A340]'
+                                }`}
                             >
-                                <p
-                                    className={`font-semibold lg:font-lg ${pathname === nav.path ? 'text-[#00A340] font-extrabold' : 'text-white hover:text-[#00A340]'}`}
-                                >
-                                    {nav.name}
-                                </p>
+                                {nav.name}
                             </a>
                         ) : (
                             <Link href={nav.path} key={index}>
                                 <p
-                                    className={`font-semibold lg:font-lg ${pathname === nav.path ? 'text-[#00A340] font-extrabold' : 'text-white hover:text-[#00A340]'}`}
+                                    className={`font-semibold lg:font-lg ${
+                                        pathname === nav.path
+                                            ? 'text-[#00A340] font-extrabold'
+                                            : 'text-white hover:text-[#00A340]'
+                                    }`}
                                 >
                                     {nav.name}
                                 </p>
@@ -64,61 +78,68 @@ export default function NavBar() {
                         ),
                     )}
                 </div>
+
+                {/* CTA Button */}
                 <Link href={'/waitlist'}>
                     <Button className="bg-green-700 hover:bg-black/40">
                         Join The Waitlist
                     </Button>
                 </Link>
             </nav>
-            {/* mobile header */}
-            <nav className="flex justify-between items-center w-full p-5 lg:hidden">
-                <div className="flex items-center">
-                    <DropdownMenu>
-                        <DropdownMenuTrigger>
-                            <Menu className="text-white" />
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent className="bg-slate-900/80">
-                            {navItems.map((nav, index) =>
-                                nav.external ? (
-                                    <a
-                                        href={nav.path}
-                                        key={index}
-                                        target="target_blank"
+
+            {/* Mobile Header */}
+            <nav className="flex justify-between items-center w-full px-5 py-4 lg:hidden">
+                {/* Mobile Menu */}
+                <DropdownMenu>
+                    <DropdownMenuTrigger>
+                        <Menu className="text-white" />
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="bg-slate-900/80">
+                        {navItems.map((nav, index) =>
+                            nav.external ? (
+                                <a
+                                    href={nav.path}
+                                    key={index}
+                                    target="_blank"
+                                    className={`font-semibold ${
+                                        pathname === nav.path
+                                            ? 'text-[#00A340]'
+                                            : 'text-white'
+                                    }`}
+                                >
+                                    <DropdownMenuItem>
+                                        {nav.name}
+                                    </DropdownMenuItem>
+                                </a>
+                            ) : (
+                                <Link href={nav.path} key={index}>
+                                    <DropdownMenuItem
+                                        className={`font-semibold ${
+                                            pathname === nav.path
+                                                ? 'text-[#00A340]'
+                                                : 'text-white'
+                                        }`}
                                     >
-                                        <DropdownMenuItem
-                                            className={`font-semibold ${pathname === nav.path ? 'text-[#00A340]' : 'text-white'}`}
-                                        >
-                                            {nav.name}
-                                        </DropdownMenuItem>
-                                    </a>
-                                ) : (
-                                    <Link href={nav.path} key={index}>
-                                        <DropdownMenuItem
-                                            className={`font-semibold ${pathname === nav.path ? 'text-[#00A340]' : 'text-white'}`}
-                                        >
-                                            {nav.name}
-                                        </DropdownMenuItem>
-                                    </Link>
-                                ),
-                            )}
-                            <DropdownMenuItem>
-                                <Link href={'/waitlist'}>
-                                    <Button className="bg-green-700 hover:bg-black/40">
-                                        Join The Waitlist
-                                    </Button>
+                                        {nav.name}
+                                    </DropdownMenuItem>
                                 </Link>
-                            </DropdownMenuItem>
-                        </DropdownMenuContent>
-                    </DropdownMenu>
-                </div>
-                <Link href={'/'}>
-                    <Image
-                        src="./logo.svg"
-                        alt="logo"
-                        width={20}
-                        height={20}
-                        className="w-28 h-20"
-                    />
+                            ),
+                        )}
+
+                        {/* CTA Button */}
+                        <DropdownMenuItem>
+                            <Link href={'/waitlist'}>
+                                <Button className="bg-green-700 hover:bg-black/40 w-full">
+                                    Join The Waitlist
+                                </Button>
+                            </Link>
+                        </DropdownMenuItem>
+                    </DropdownMenuContent>
+                </DropdownMenu>
+
+                {/* Logo */}
+                <Link href={'/'} className="flex justify-center items-center">
+                    <Image src="/logo.svg" alt="logo" width={110} height={35} />
                 </Link>
             </nav>
         </div>

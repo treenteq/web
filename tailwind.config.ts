@@ -50,9 +50,9 @@ export default {
                     '4': 'hsl(var(--chart-4))',
                     '5': 'hsl(var(--chart-5))',
                 },
-                screens: {
-                    '3xl': '2560px',
-                },
+            },
+            screens: {
+                '3xl': '1950px',
             },
             borderRadius: {
                 lg: 'var(--radius)',
