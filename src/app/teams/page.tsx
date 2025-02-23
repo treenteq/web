@@ -8,7 +8,7 @@ export default function Teams() {
         {
             image: '/Sheikh.png',
             name: 'Shekh Razaul Islam',
-            position: 'Lead, Finance',
+            position: 'Lead, Finance & Operations',
         },
         {
             image: '/Jesu.png',
@@ -18,7 +18,7 @@ export default function Teams() {
         {
             image: '/Dhrupad.png',
             name: 'Dhrupad Das',
-            position: 'Advisor, Product and Legal',
+            position: 'Advisor, Product & Legal',
         },
         {
             image: '/Rahul.png',
