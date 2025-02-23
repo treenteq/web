@@ -55,7 +55,7 @@ export default function Home() {
                                     Learn More
                                 </Button>
                             </a>
-                            <Link href={'/market'}>
+                            <Link href={'https://app.treenteq.com/'}>
                                 <Button className="bg-green-700 hover:bg-black/60 text-white p-2 font-semibold">
                                     Treen It
                                 </Button>
