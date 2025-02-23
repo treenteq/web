@@ -11,7 +11,6 @@ export default function Teams() {
             position: 'Lead, Finance',
         },
         {
-
             image: '/Jesu.png',
             name: 'Jesu Neelkamal Borah',
             position: 'Lead, Communications',
