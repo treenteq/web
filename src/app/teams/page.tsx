@@ -28,7 +28,7 @@ export default function Teams() {
         {
             image: '/Barrel.png',
             name: 'Mr. Barrel',
-            position: 'Inspirarion',
+            position: 'Inspiration',
         },
         { image: '/Nipu.png', name: 'Nipu Das', position: 'Developer, UI/UX' },
         {
@@ -50,8 +50,7 @@ export default function Teams() {
             <div className="w-full absolute top-0 flex flex-col justify-center items-center">
                 <NavBar />
                 <p className="text-white my-6 text-2xl">
-                    A TEAM OF <span className="text-[#00A340]">WEB3</span>{' '}
-                    EXPERTS
+                    OUR <span className="text-[#00A340]">TEAM</span>
                 </p>
                 <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center items-center z-10 mb-5">
                     {team.map((member, index) => (
