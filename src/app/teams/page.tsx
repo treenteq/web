@@ -11,7 +11,7 @@ export default function Teams() {
             position: 'Lead, Finance',
         },
         {
-            image: '/jesu_coloured_.png',
+            image: '/Jesu.png',
             name: 'Jesu Neelkamal Borah',
             position: 'Lead, Communications',
         },
@@ -21,23 +21,23 @@ export default function Teams() {
             position: 'Advisor, Product and Legal',
         },
         {
-            image: '/rahul_coloured.png',
+            image: '/Rahul.png',
             name: 'Rahul Barman',
             position: 'Lead, Tech',
         },
         {
-            image: '/barrel_coloured.png',
+            image: '/Barrel.png',
             name: 'Mr. Barrel',
             position: 'Inspirarion',
         },
-        { image: '/nipu.png', name: 'Nipu Das', position: 'Developer, UI/UX' },
+        { image: '/Nipu.png', name: 'Nipu Das', position: 'Developer, UI/UX' },
         {
-            image: '/vansh_coloured.png',
+            image: '/Vansh.png',
             name: 'Vansh Sahay',
             position: 'Developer, Blockchain',
         },
         {
-            image: '/sumit_coloured.png',
+            image: '/Sumit.png',
             name: 'Sumit Mazumdar',
             position: 'Developer, Full Stack',
         },
