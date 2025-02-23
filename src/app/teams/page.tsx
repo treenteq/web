@@ -16,30 +16,31 @@ export default function Teams() {
             position: 'Lead, Communications',
         },
         {
-            image: '/Dhrupad.png',
-            name: 'Dhrupad Das',
-            position: 'Advisor, Product & Legal',
-        },
-        {
             image: '/Rahul.png',
             name: 'Rahul Barman',
             position: 'Lead, Tech',
         },
         {
-            image: '/Barrel.png',
-            name: 'Mr. Barrel',
-            position: 'Inspiration',
-        },
-        { image: '/Nipu.png', name: 'Nipu Das', position: 'Developer, UI/UX' },
-        {
-            image: '/Vansh.png',
-            name: 'Vansh Sahay',
-            position: 'Developer, Blockchain',
+            image: '/Dhrupad.png',
+            name: 'Dhrupad Das',
+            position: 'Advisor, Product & Legal',
         },
         {
             image: '/Sumit.png',
             name: 'Sumit Mazumdar',
             position: 'Developer, Full Stack',
+        },
+
+        {
+            image: '/Vansh.png',
+            name: 'Vansh Sahay',
+            position: 'Developer, Blockchain',
+        },
+        { image: '/Nipu.png', name: 'Nipu Das', position: 'Developer, UI/UX' },
+        {
+            image: '/Barrel.png',
+            name: 'Mr. Barrel',
+            position: 'Inspiration',
         },
     ];
     return (
