@@ -6,7 +6,7 @@ import React from 'react';
 export default function Teams() {
     const team = [
         {
-            image: '/razaul_coloured.png',
+            image: '/Sheikh.png',
             name: 'Shekh Razaul Islam',
             position: 'Lead, Finance',
         },
@@ -16,7 +16,7 @@ export default function Teams() {
             position: 'Lead, Communications',
         },
         {
-            image: '/dhrupad_coloured.png',
+            image: '/Dhrupad.png',
             name: 'Dhrupad Das',
             position: 'Advisor, Product and Legal',
         },
@@ -57,15 +57,15 @@ export default function Teams() {
                     {team.map((member, index) => (
                         <div
                             key={index}
-                            className="border border-white bg-black/50 rounded-lg p-2 flex flex-col items-center space-y-3 hover:shadow-lg hover:border-green-400 transition duration-300 cursor-pointer"
+                            className="rounded-lg p-2 flex flex-col items-center space-y-3 hover:shadow-lg cursor-pointer"
                         >
-                            <div className="w-36 h-36 overflow-hidden">
+                            <div className="w-44 h-48 overflow-hidden">
                                 <Image
                                     src={member.image}
                                     alt={member.name}
                                     width={144}
                                     height={144}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover mix-blend-screen"
                                 />
                             </div>
                             <h3 className="text-white text-lg font-semibold">
