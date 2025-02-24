@@ -32,7 +32,7 @@ export default function Home() {
                 <NavBar />
 
                 {/* main content */}
-                <main className="w-5/6 mx-auto grid grid-cols-1 mt-36 lg:grid-cols-2 gap-12 place-items-center sm:mt-20 lg:mt-20 mb-4">
+                <main className="w-5/6 mx-auto grid grid-cols-1 mt-36 lg:grid-cols-2 gap-12 place-items-center sm:mt-20 lg:mt-5 mb-4">
                     <div className="space-y-8 text-center sm:text-left">
                         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
                             Unlock The Value Of{' '}
