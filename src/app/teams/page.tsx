@@ -36,7 +36,7 @@ export default function Teams() {
             name: 'Vansh Sahay',
             position: 'Developer, Blockchain',
         },
-        { image: '/Nipu.png', name: 'Nipu Das', position: 'Developer, UI/UX' },
+        { image: '/nipu.png', name: 'Nipu Das', position: 'Developer, UI/UX' },
         {
             image: '/Barrel.png',
             name: 'Mr. Barrel',
