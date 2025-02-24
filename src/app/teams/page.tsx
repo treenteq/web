@@ -57,7 +57,7 @@ export default function Teams() {
                     {team.map((member, index) => (
                         <div
                             key={index}
-                            className="rounded-lg p-2 flex flex-col items-center space-y-3 hover:shadow-lg cursor-pointer"
+                            className="rounded-lg p-2 flex flex-col items-center space-y-3 cursor-pointer"
                         >
                             <div className="w-44 h-48 overflow-hidden">
                                 <Image
